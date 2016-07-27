@@ -1,0 +1,23 @@
+﻿<Window x:Class="MuscleApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MuscleApp"
+        mc:Ignorable="d"
+        Title="MainWindow">
+    <StackPanel Orientation="Horizontal" Name="StackPanel" >
+        <Grid>
+            <Image x:Name="imgBody"  Source="Body.JPG" />
+            <Canvas x:Name="canvas" MouseMove="canvas_MouseMove" MouseLeave="canvas_MouseLeave">
+                <TextBox x:Name="desc" />
+            </Canvas>
+           
+        </Grid>
+        <TextBlock x:Name="MuscleInfo" >
+            
+        </TextBlock>
+        
+    </StackPanel>
+
+</Window>
